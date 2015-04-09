@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = MavenPom::VERSION
 
-  gem.add_dependency "nokogiri", "~> 1.5.0"
+  gem.add_dependency "nokogiri", "~> 1.5"
   gem.add_dependency "rgl", "~> 0.4.0"
   gem.add_development_dependency "rspec", "~> 2.0"
 end
