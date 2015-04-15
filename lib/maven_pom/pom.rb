@@ -75,7 +75,7 @@ module MavenPom
     end
 
     def dependencies
-      @pom.css("dependencies > dependency").map do |node|
+      @pom.xpath("/project/dependencies/dependency").map do |node|
         dependency_name_from(node)
       end
     end
