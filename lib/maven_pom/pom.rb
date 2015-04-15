@@ -91,8 +91,8 @@ module MavenPom
     end
 
     def dependency_name_from(node)
-      gid = node.css("groupId").text
-      aid = node.css("artifactId").text
+      gid = node.css("groupId")[0].text
+      aid = node.css("artifactId")[0].text
 
       gid = group_id if gid == "${project.groupId}" # ugh
 
